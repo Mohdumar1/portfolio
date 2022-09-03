@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <title>M.Umar | Front-End Developer</title>
+</head>
+<body>
+
+    <head>
+        <nav>
+            <h3 class="logo">M.UMAR</h3>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </head>
+    <section class="banner">
+        <div class="container ">
+            <div class="flex">
+                <div class="col-left">
+                    <img src="mypic.jpg" alt="banner-pic">
+                </div>
+                <div class="col-right">
+                    <h1>Hi there!</h1>
+                    <p>I am a 21 year old self tought guy live in Delhi,I have a knowledge of Html(5), Css(3) with its framwork like Bootstrap and Tailwind, Javascript with react and I know how to built your ideas and designs into website with mobile friendly layouts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="line"></div>
+
+    <section class="about-me">
+        <div class="container">
+            <div class="flex">
+                <div class="col-left">
+                    <h2>My Career So Far</h2>
+                    <p>I work with different companies, organization and sometimes a person too, to build their business portfolio and multiple websites with Frontend skills.</p>
+                </div>
+                <div class="col-right">
+                    <div class="grid skills">
+                        <button>html</button>
+                        <button>html5</button>
+                        <button>CSS</button>
+                        <button>SCSS</button>
+                        <button>Bootstrap</button>
+                        <button>Javascript</button>
+                        <button>React</button>
+                        <button>Git</button>
+                        <button>Responsive</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="flex">
+                <div class="col-left">
+                    <h2>Let's Talk</h2>
+                    <hr>
+                    <p>I'd love to talk with you about your project.Drop us a message. and i'll get to you as soon as possible.</p>
+                    <p>Want to hear from me sooner?Give me a call.</p>
+                    <a href="#" class="num"><i class="bx bx-phone-call" style="margin-right: 5px;"></i>9773861161</a>
+                    <div class="icons">
+                        <a href="https://www.instagram.com/mohdumar7810/" class="icon"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://github.com/Mohdumar1" class="icon"><i class='bx bxl-github'></i></a>
+                        <a href="" class="icon"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="" class="icon"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <form id="contact-form">
+                        <input type="text" id="fullName" placeholder="Name">
+                        <input type="email" id="email-id" placeholder="Email">
+                        <textarea id="message"  cols="30" rows="5" placeholder="Meassage"></textarea>
+                        <button onclick="sendEmail()"  type="submit" class="form-btn" id="form-submit-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('w1vPNG4__jkPZ9bFe');
+        })();
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

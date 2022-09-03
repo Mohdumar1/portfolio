@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script:wght@400;500;700&family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+// $background-color: #e9eef2;
+$background-color: #efeee5;
+// $logo-color: #e65c4f;
+$logo-color: #274546;
+// $text-color: #326789;
+$text-color: #274546;
+
+
+
+body{
+    background: $background-color;
+
+}
+section{
+    margin-top: 5rem;
+}
+.container{
+    max-width: 80%;
+    // border: 1px solid white;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-left{
+    flex-basis: 48%;
+}
+.col-right{
+    flex-basis:48%;
+}
+img{
+    width: 50%;
+}
+p{
+    color: $text-color;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.line{
+    height: 1px;
+    background: $text-color;
+    width: 80%;
+    margin: 3rem auto;
+    opacity: 0.4;
+}
+
+
+
+
+
+nav{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 4rem;
+    // box-shadow: 0 1px 10px 1px #78a6c8 ;
+
+    .logo{
+        font-size: 2.3rem;
+        color:$logo-color;
+        // font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        font-family: 'Aboreto', cursive;
+    }
+    ul li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: $text-color ;
+        font-size: 1.6rem;
+        margin-right: 1.5rem;
+        border: 1px solid $text-color;
+        padding: 1rem 2rem;
+        border-radius: 1.4rem;
+    }
+    a:hover{
+        background-color: $text-color;
+        color:  $background-color;
+        transition: .5s;
+    }
+}
+
+.banner{
+    .col-left{
+        flex-basis: 45%;
+        overflow: hidden;
+    }
+    .col-right{
+        flex-basis:55%;
+        overflow: hidden;
+    }
+    .col-left img{
+        display: block;
+        border-radius: .8rem;
+        margin: auto;
+        object-fit:cover;
+    }
+    .col-right{
+        padding:0 1rem;
+
+        h1{
+            font-size: 5rem;
+            color: $logo-color;
+            margin-bottom: 2rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        p{
+            font-size: 1.7rem;
+            line-height: 3rem;
+        }
+    } 
+}
+
+section.about-me{
+    .container{
+        padding:2rem;
+       h2{
+        font-size:3rem;
+        color: $logo-color;
+        margin-bottom: 2rem;
+       }
+       p{
+        font-size: 1.7rem;
+        line-height: 3rem;
+       }
+       .col-right{
+        padding: 0 1rem;
+            .grid{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap:1rem ;
+
+                button{
+                    padding: 0.4rem .6rem;
+                    background: transparent;
+                    border:none;
+                    outline:none;
+                    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
+                    border-radius: 1rem;
+                    color:$text-color;
+                    transition: .5s;
+                }
+                button:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+       }
+    }
+}
+
+@media (max-width: 1000px){
+    html{
+        font-size: 58%;
+    }
+    .col-left img{
+        display: block;
+        margin: auto;
+        object-fit:cover;
+        width: 60%;
+    }
+    .banner .col-right h1{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 800px){
+    html{
+        font-size: 57%;
+    }
+    .col-left img{
+        display: block;
+        margin: auto;
+        object-fit:cover;
+        width: 80%;
+    }
+   
+    .banner .col-right h1{
+        font-size: 3rem;
+    }
+
+}
+
+@media (max-width:750px) {
+    .about-me .flex{
+        display: block;
+        
+        .col-left{
+            margin-bottom: 3rem;
+        }
+        .col-left, .col-right{
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 55%;
+    }
+    nav{
+        padding: 1rem 1rem;
+         ul li a{
+            font-size: 1.2rem;
+            padding: .4rem .7rem;
+         }
+    }
+    .col-left img{
+        display: block;
+        margin: auto;
+        object-fit:cover;
+        width: 100%;
+    }
+     .banner .col-right h1{
+        font-size: 2.5rem;
+        margin-bottom: .5rem;
+    }
+    .banner .col-right p{
+        line-height: 2rem;
+    }
+    section.about-me .container p{
+        line-height: 2rem;
+    }
+    section.about-me .container h2{
+        font-size: 2rem;
+    }
+    section.about-me .container .col-right button{
+        font-size: 1.2rem;
+    }
+    
+}
+
+section.contact{
+    .container{
+        padding: 2rem;
+    h2{
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        color: $logo-color;
+    }
+    hr{
+        width: 80%;
+        height: 1px;
+        background-color: gray;
+        opacity: 0.4;
+        margin-bottom: 2rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    .col-left {
+        p{
+            margin-bottom: 1rem;
+            line-height: 2;
+        }
+        .num{
+            margin-bottom: 10rem;
+            text-decoration: none;
+            font-size: 1.3rem;
+            color: $text-color;
+        }
+        .icons{
+            margin-top: 2rem;
+            width: 100%;
+            .icon{
+                font-size: 2.4rem;
+                color: $text-color;
+                cursor: pointer;
+            }
+         
+        }
+        
+    }
+    .col-right form{
+        display: grid;
+        gap: 1.8rem;
+    input{
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $text-color;
+        padding: .7rem;
+        background: transparent;
+        color: $text-color;
+    }
+    textarea{
+        border: 0;
+        padding: 1.2rem;
+        background: transparent;
+        border-bottom: 1px solid $text-color;
+        margin-bottom: 2rem;
+    }
+    textarea:focus{
+        outline: none;
+        border: 1px solid $text-color;
+    }
+    }
+    .col-right .form-btn{
+        width: fit-content;
+        padding: .5rem .9rem;
+        background-color: $background-color;
+        color: $text-color;
+        border: 1px solid $text-color;
+        border-radius: .7rem;
+        text-decoration: none;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    
+
+   
+}
+    
+} 
+
+
+
