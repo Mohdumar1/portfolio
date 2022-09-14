@@ -9,19 +9,32 @@ html{
     scroll-behavior: smooth;
 }
 
-// $background-color: #e9eef2;
-$background-color: #efeee5;
-// $logo-color: #e65c4f;
-$logo-color: #274546;
-// $text-color: #326789;
-$text-color: #274546;
+// $background-color: #efeee5;
+// $logo-color: #274546;
+// $text-color: #274546;
 
+// $background-color: #e9eef2;
+// $logo-color: #e65c4f;
+// $text-color: #326789;
+
+$background-color: #1a1a1d;
+$logo-color: #c3073f;
+$text-color: #acacb8;
+$border-color: #950740;
 
 
 body{
     background: $background-color;
 
 }
+// body {
+// 	animation: fadeInAnimation ease 3s;
+// 	animation-iteration-count: 1;
+// 	animation-fill-mode: forwards;
+// }
+
+
+
 section{
     margin-top: 5rem;
 }
@@ -81,7 +94,7 @@ nav{
     }
     a{
         text-decoration: none;
-        color: $text-color ;
+        color: $text-color;
         font-size: 1.6rem;
         margin-right: 1.5rem;
         border: 1px solid $text-color;
@@ -89,8 +102,9 @@ nav{
         border-radius: 1.4rem;
     }
     a:hover{
-        background-color: $text-color;
-        color:  $background-color;
+        background-color: $border-color;
+        color:  white;
+        border-color: $border-color;
         transition: .5s;
     }
 }
@@ -157,6 +171,8 @@ section.about-me{
                 }
                 button:hover{
                     transform: scale(1.1);
+                    color: white;
+                    background-color: $border-color;
                 }
             }
 
@@ -274,6 +290,10 @@ section.contact{
             text-decoration: none;
             font-size: 1.3rem;
             color: $text-color;
+            transition: .3s;
+        }
+        .num:hover{
+            color: $border-color;
         }
         .icons{
             margin-top: 2rem;
@@ -282,6 +302,10 @@ section.contact{
                 font-size: 2.4rem;
                 color: $text-color;
                 cursor: pointer;
+                transition: .3s;
+            }
+            .icon:hover{
+                color: $border-color;
             }
          
         }
@@ -293,7 +317,7 @@ section.contact{
     input{
         outline: none;
         border: none;
-        border-bottom: 1px solid $text-color;
+        border-bottom: 1px solid $border-color;
         padding: .7rem;
         background: transparent;
         color: $text-color;
@@ -302,7 +326,7 @@ section.contact{
         border: 0;
         padding: 1.2rem;
         background: transparent;
-        border-bottom: 1px solid $text-color;
+        border-bottom: 1px solid $border-color;
         margin-bottom: 2rem;
     }
     textarea:focus{
@@ -315,13 +339,16 @@ section.contact{
         padding: .5rem .9rem;
         background-color: $background-color;
         color: $text-color;
-        border: 1px solid $text-color;
+        border: 1px solid $border-color;
         border-radius: .7rem;
         text-decoration: none;
         font-size: 1.1rem;
         cursor: pointer;
     }
-    
+    .form-btn:hover{
+        color: white;
+       background:$border-color;
+    }
 
    
 }

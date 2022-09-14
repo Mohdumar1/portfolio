@@ -1,4 +1,3 @@
-console.log("js file");
 const form = document.getElementById("contact-form");
 
 function sendEmail(){
@@ -11,3 +10,4 @@ function sendEmail(){
         form.reset()
 
 }
+
