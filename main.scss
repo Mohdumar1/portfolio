@@ -355,5 +355,17 @@ section.contact{
     
 } 
 
+@media (max-width:500px){
+    .flex{
+        display: block;
+    }
+    .col-left{
+        margin-bottom: 3rem;
+    }
+    .col-left img{
+        width: 20rem;
+    }
+}
+
 
 

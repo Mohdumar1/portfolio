@@ -312,4 +312,16 @@ section.contact .container .col-right .form-btn {
 section.contact .container .form-btn:hover {
   color: white;
   background: #950740;
+}
+
+@media (max-width: 500px) {
+  .flex {
+    display: block;
+  }
+  .col-left {
+    margin-bottom: 3rem;
+  }
+  .col-left img {
+    width: 20rem;
+  }
 }/*# sourceMappingURL=main.css.map */
